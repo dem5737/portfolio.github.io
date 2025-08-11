@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Restaurant</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/scripts.js" defer></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Restaurant</h1>
+    </header>
+    <!-- Responsive Restaurant individual assignment
+ Diego Mendez
+ 7/20/2025 -->
+    <main>
+      <section class="directions">
+        <h2>Directions</h2>
+        <p>420 Main Street, Nashville, TN</p>
+      </section>
+
+      <section class="map mobile-only">
+        <img
+          src="images/map-small.jpg"
+          alt="Map to Responsive Restaurant"
+        />
+      </section>
+
+      <section class="map tablet-only desktop-only">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=..."
+          width="300"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section class="menu tablet-only desktop-only">
+        <div class="menu-item">
+          <img
+            src="images/menu1.jpg"
+            alt="Grilled Salmon"
+          />
+          <p>
+            <strong>Grilled Salmon</strong> Fresh Atlantic
+            salmon with wild rice and broccoli
+          </p>
+        </div>
+        <section class="menu tablet-only desktop-only">
+          <div class="menu-item">
+            <img
+              src="images/menu2.jpg"
+              alt="Classic Cheeseburger"
+            />
+            <p>
+              <strong>Classic Cheeseburger</strong> 93% lean
+              beef patty with cheddar cheese, lettuce, and
+              tomato
+            </p>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="images/menu3.jpg"
+              alt="Caesar Salad"
+            />
+            <p>
+              <strong>Caesar Salad</strong>
+              lettuce tossed with Caesar dressing, croutons,
+              and Parmesan
+            </p>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="images/menu4.jpg"
+              alt="Grilled Chicken Sandwich"
+            />
+            <p>
+              <strong>Grilled Chicken Sandwich</strong>
+              Grilled chicken breast with avocado, lettuce
+            </p>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="images/menu5.jpg"
+              alt="Spaghetti Carbonara"
+            />
+            <p>
+              <strong>Spaghetti Carbonara</strong> Classic
+              Italian pasta
+            </p>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="images/menu6.jpg"
+              alt="Chocolate Lava Cake"
+            />
+            <p>
+              <strong>Chocolate Lava Cake</strong> Warm
+              chocolate served with vanilla ice cream
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="tablet-only desktop-only">
+      <p>420 Main Street, Nashville, TN | (615) 111-2222</p>
+      <p class="desktop-only">
+        Email: contact@ResponsiveRest.com
+      </p>
+    </footer>
+  </body>
+</html>

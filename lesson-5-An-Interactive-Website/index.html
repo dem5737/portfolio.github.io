@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Fun JavaScript Stuff</title>
+  </head>
+  <body>
+    <h1>JavaScript Interactivity</h1>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Vitae auctor eu augue ut.
+        Aliquam etiam erat velit scelerisque in. Magna
+        fermentum iaculis eu non diam phasellus vestibulum
+        lorem. Massa tincidunt nunc pulvinar sapien et
+        ligula ullamcorper malesuada.
+      </p>
+      <p id="greeting">Hello, world!</p>
+    </main>
+    <section>
+      <label for="color-select"
+        >Choose a background color:</label
+      >
+      <select
+        id="color-select"
+        select="changeBackgroundColor()"
+      >
+        <option value="#FFFFFF">White</option>
+        <option value="#F2F2F2">Light Gray</option>
+        <option value="#E0F2F7">Light Blue</option>
+        <option value="#FFFDD0">Cream</option>
+      </select>
+
+      <label for="greetingInput">New Greeting:</label>
+      <input
+        type="text"
+        id="greetingInput"
+        placeholder="Enter new greeting"
+      />
+
+      <label for="paragraphInput">New Paragraph 1:</label>
+      <input
+        type="text"
+        id="paragraphInput"
+        placeholder="Update paragraph 1"
+      />
+
+      <button onclick="applyChanges()">
+        Apply Changes
+      </button>
+    </section>
+    <script src="scripts/javascripts.js"></script>
+  </body>
+</html>
+<!-- Diego Mendez
+ 7/9/25 -->

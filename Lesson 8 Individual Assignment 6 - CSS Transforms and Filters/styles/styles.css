@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar content1 content1"
+    "sidebar content2 content3"
+    "footer footer footer";
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.container > div {
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.header {
+  grid-area: header;
+  background-color: #6a5acd;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: #20b2aa;
+}
+.content1 {
+  grid-area: content1;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+.content2 {
+  grid-area: content2;
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+.content3 {
+  grid-area: content3;
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+.footer {
+  grid-area: footer;
+  background-color: #6a5acd;
+}
+
+.sidebar {
+  filter: brightness(0.9) contrast(1.2);
+}
+
+.content3 {
+  transform: rotate(-2deg) scale(1.05);
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.header {
+  animation: popIn 1s ease-out;
+}
